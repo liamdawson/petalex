@@ -1,0 +1,54 @@
+{
+    "version": "2.0.0",
+    "presentation": {
+        "reveal": "always",
+        "panel": "new"
+    },
+    "tasks": [
+        {
+            "taskName": "cargo build",
+            "type": "shell",
+            "command": "cargo",
+            "args": [
+                "build"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": "$rustc"
+        },
+        {
+            "taskName": "cargo run",
+            "type": "shell",
+            "command": "cargo",
+            "args": [
+                "run",
+                "--",
+                "generate"
+            ],
+            "problemMatcher": "$rustc"
+        },
+        {
+            "taskName": "cargo test",
+            "type": "shell",
+            "command": "cargo",
+            "args": [
+                "test"
+            ],
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "problemMatcher": "$rustc"
+        },
+        {
+            "taskName": "cargo clean",
+            "type": "shell",
+            "command": "cargo",
+            "args": [
+                "clean"
+            ]
+        }
+    ]
+}
