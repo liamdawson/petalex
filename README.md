@@ -35,10 +35,13 @@ Example valid words:
 Example invalid words:
 
 * SHORT
+
     The puzzle does not contain a "H"
 * SORTS
+
     The puzzle only contains one "S"
 * SOFT
+
     The central letter "R" must be used
 * ROT
     Minimum length of 4 letters
